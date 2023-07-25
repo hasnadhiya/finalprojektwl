@@ -64,22 +64,22 @@ function App() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Formulir Data Mahasiswa</h1>
+      <h1>Formulir Pemesanan</h1>
       <form onSubmit={handleSubmit} style={{ marginBottom: "2rem" }}>
-        <input type="text" value={nama} onChange={(e) => setNama(e.target.value)} placeholder="Nama" style={{ marginRight: "1rem" }} />
-        <input type="text" value={harga} onChange={(e) => setHarga(e.target.value)} placeholder="NIM" style={{ marginRight: "1rem" }} />
-        <input type="text" value={kategori} onChange={(e) => setKategori(e.target.value)} placeholder="Program Studi" style={{ marginRight: "1rem" }} />
+        <input type="text" value={nama} onChange={(e) => setNama(e.target.value)} placeholder="Jenis Pesanan" style={{ marginRight: "1rem" }} />
+        <input type="text" value={harga} onChange={(e) => setHarga(e.target.value)} placeholder="Harga" style={{ marginRight: "1rem" }} />
+        <input type="text" value={kategori} onChange={(e) => setKategori(e.target.value)} placeholder="Jumlah" style={{ marginRight: "1rem" }} />
         <button type="submit" style={{ backgroundColor: "pink", color: "white", padding: "0.5rem 1rem", borderRadius: "4px", border: "none", cursor: "pointer" }}>{selectedMenuId ? "Update Data" : "Create Data"}</button>
       </form>
 
-      <h1>Data Mahasiswa</h1>
+      <h1>Daftar Pesanan</h1>
       <table style={{ margin: "0 auto", borderCollapse: "collapse" }}>
         <thead>
           <tr>
-            <th style={{ padding: "0.5rem", backgroundColor: "LightPink" }}>Nama</th>
-            <th style={{ padding: "0.5rem", backgroundColor: "LightPink" }}>NIM</th>
-            <th style={{ padding: "0.5rem", backgroundColor: "LightPink" }}>Program Studi</th>
-            <th style={{ padding: "0.5rem", backgroundColor: "LightPink" }}>Actions</th>
+            <th style={{ padding: "0.5rem", backgroundColor: "LightGreen" }}>Jenis Pesanan</th>
+            <th style={{ padding: "0.5rem", backgroundColor: "LightGreen" }}>Harga</th>
+            <th style={{ padding: "0.5rem", backgroundColor: "LightGreen" }}>Jumlah</th>
+            <th style={{ padding: "0.5rem", backgroundColor: "LightGreen" }}>Actions</th>
           </tr>
         </thead>
         <tbody>
